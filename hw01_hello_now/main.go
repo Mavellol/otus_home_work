@@ -17,6 +17,6 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Printf("current time: %s\n", now.UTC().Format(layout))
-	fmt.Printf("exact time: %s\n", ntpNow.UTC().Format(layout))
+	fmt.Printf("current time: %s\n", now.Local().Format(layout))
+	fmt.Printf("exact time: %s\n", ntpNow.Local().Format(layout))
 }
